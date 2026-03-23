@@ -1,0 +1,10 @@
+{
+  "eyebrow": "Nuxt SaaS Starter",
+  "hero_media": "https://images.unsplash.com/photo-1752659504453-fe55d292efb9?auto=format&fit=crop&fm=jpg&q=80&w=1600",
+  "primary_cta_href": "#pricing",
+  "primary_cta_label": "Explore pricing",
+  "secondary_cta_href": "#features",
+  "secondary_cta_label": "See features",
+  "subtitle": "This starter gives product teams narrative marketing sections without sacrificing maintainable Nuxt structure.",
+  "title": "Pricing, integrations, and changelog storytelling from the first deploy."
+}

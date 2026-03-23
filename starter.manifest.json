@@ -1,0 +1,29 @@
+{
+  "id": "nuxt-saas",
+  "framework": "nuxt",
+  "category": "saas",
+  "visual_family": "narrative-marketing",
+  "theme": "signal_saas",
+  "deploy_targets": ["vercel", "netlify"],
+  "models": [
+    "site-settings",
+    "navigation",
+    "footer",
+    "seo-defaults",
+    "hero",
+    "feature",
+    "pricing-tier",
+    "testimonial",
+    "faq-item",
+    "integration",
+    "changelog-entry"
+  ],
+  "sections": [
+    "hero_block",
+    "feature_grid_block",
+    "pricing_grid_block",
+    "testimonial_grid_block",
+    "faq_block"
+  ]
+}
+

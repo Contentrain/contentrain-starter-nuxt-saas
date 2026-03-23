@@ -1,0 +1,269 @@
+{
+  "entries": [
+    {
+      "model": "site-settings",
+      "locale": "en",
+      "data": {
+        "site_name": "Signal Stack",
+        "site_tagline": "A SaaS starter that looks ready for launch, not ready for redesign.",
+        "default_locale": "en",
+        "theme_name": "signal_saas"
+      }
+    },
+    {
+      "model": "navigation",
+      "locale": "en",
+      "data": {
+        "items": [
+          { "label": "Features", "href": "#features" },
+          { "label": "Architecture", "href": "/architecture" },
+          { "label": "Pricing", "href": "#pricing" },
+          { "label": "Changelog", "href": "/changelog/multi-surface-launch-copy" }
+        ],
+        "cta_label": "Explore pricing",
+        "cta_href": "#pricing"
+      }
+    },
+    {
+      "model": "hero",
+      "locale": "en",
+      "data": {
+        "eyebrow": "Nuxt SaaS Starter",
+        "title": "Pricing, integrations, and changelog storytelling from the first deploy.",
+        "subtitle": "This starter gives product teams narrative marketing sections without sacrificing maintainable Nuxt structure.",
+        "hero_media": "https://images.unsplash.com/photo-1752659504453-fe55d292efb9?auto=format&fit=crop&fm=jpg&q=80&w=1600",
+        "primary_cta_label": "Explore pricing",
+        "primary_cta_href": "#pricing",
+        "secondary_cta_label": "See features",
+        "secondary_cta_href": "#features"
+      }
+    },
+    {
+      "model": "seo-defaults",
+      "locale": "en",
+      "data": {
+        "meta_title": "Signal Stack",
+        "meta_description": "A premium Nuxt SaaS starter with pricing, integrations, and Contentrain-ready content models.",
+        "canonical_base": "https://example.com"
+      }
+    },
+    {
+      "model": "footer",
+      "locale": "en",
+      "data": {
+        "blurb": "A stronger SaaS starting point for product marketing teams that care about rhythm, proof, and clarity.",
+        "columns": [
+          {
+            "title": "Starter",
+            "links": [
+              { "label": "Pricing", "href": "#pricing" },
+              { "label": "Proof", "href": "#proof" },
+              { "label": "Architecture", "href": "/architecture" },
+              { "label": "Latest changelog", "href": "/changelog/multi-surface-launch-copy" }
+            ]
+          },
+          {
+            "title": "Contentrain",
+            "links": [
+              { "label": "SDK", "href": "https://ai.contentrain.io/packages/sdk.html" },
+              { "label": "Docs", "href": "https://docs.contentrain.io/" },
+              { "label": "Studio", "href": "https://studio.contentrain.io/" }
+            ]
+          }
+        ],
+        "legal_notice": "2026 Signal Stack"
+      }
+    },
+    {
+      "model": "feature",
+      "locale": "en",
+      "id": "narrative-product-marketing",
+      "data": {
+        "title": "Narrative product marketing",
+        "summary": "Guide buyers from context to proof to pricing without flattening every section into the same layout."
+      }
+    },
+    {
+      "model": "feature",
+      "locale": "en",
+      "id": "shared-content-contracts",
+      "data": {
+        "title": "Shared content contracts",
+        "summary": "Every important marketing surface maps cleanly to a Contentrain model instead of scattered page copy."
+      }
+    },
+    {
+      "model": "feature",
+      "locale": "en",
+      "id": "nuxt-native-structure",
+      "data": {
+        "title": "Nuxt-native structure",
+        "summary": "Keep composables, pages, and SEO in the patterns Nuxt teams already expect to maintain."
+      }
+    },
+    {
+      "model": "pricing-tier",
+      "locale": "en",
+      "id": "starter",
+      "data": {
+        "name": "Starter",
+        "summary": "For small launches that need a stronger first impression.",
+        "price_label": "$29",
+        "featured": false,
+        "features": ["Landing sections", "Basic content models", "Deploy presets"]
+      }
+    },
+    {
+      "model": "pricing-tier",
+      "locale": "en",
+      "id": "scale",
+      "data": {
+        "name": "Scale",
+        "summary": "For SaaS teams shipping pricing, integrations, and changelog storytelling.",
+        "price_label": "$79",
+        "featured": true,
+        "features": ["Pricing system", "Integration grid", "Changelog models"]
+      }
+    },
+    {
+      "model": "pricing-tier",
+      "locale": "en",
+      "id": "studio",
+      "data": {
+        "name": "Studio",
+        "summary": "For product suites that need a fuller content and release narrative.",
+        "price_label": "Custom",
+        "featured": false,
+        "features": ["Multi-page architecture", "Editorial expansion", "Advanced tailoring"]
+      }
+    },
+    {
+      "model": "integration",
+      "locale": "en",
+      "id": "stripe",
+      "data": {
+        "name": "Stripe",
+        "slug": "stripe",
+        "summary": "Payments, subscription flows, and monetization events.",
+        "category": "payments"
+      }
+    },
+    {
+      "model": "integration",
+      "locale": "en",
+      "id": "supabase",
+      "data": {
+        "name": "Supabase",
+        "slug": "supabase",
+        "summary": "Modern database, auth, and edge function workflows.",
+        "category": "platform"
+      }
+    },
+    {
+      "model": "integration",
+      "locale": "en",
+      "id": "resend",
+      "data": {
+        "name": "Resend",
+        "slug": "resend",
+        "summary": "Transactional email and product communication.",
+        "category": "communication"
+      }
+    },
+    {
+      "model": "integration",
+      "locale": "en",
+      "id": "posthog",
+      "data": {
+        "name": "PostHog",
+        "slug": "posthog",
+        "summary": "Product analytics, experiments, and event understanding.",
+        "category": "analytics"
+      }
+    },
+    {
+      "model": "integration",
+      "locale": "en",
+      "id": "hubspot",
+      "data": {
+        "name": "HubSpot",
+        "slug": "hubspot",
+        "summary": "CRM, lifecycle messaging, and sales handoff.",
+        "category": "crm"
+      }
+    },
+    {
+      "model": "integration",
+      "locale": "en",
+      "id": "linear",
+      "data": {
+        "name": "Linear",
+        "slug": "linear",
+        "summary": "Issue planning and changelog-linked product execution.",
+        "category": "project"
+      }
+    },
+    {
+      "model": "testimonial",
+      "locale": "en",
+      "id": "mina-arslan",
+      "data": {
+        "quote": "It already feels like a product company site, not a UI kit demo.",
+        "person_name": "Mina Arslan",
+        "person_role": "Growth Marketing Lead",
+        "avatar": "https://images.unsplash.com/photo-1517014038083-2e0248ec1fd4?auto=format&fit=crop&fm=jpg&q=80&w=800"
+      }
+    },
+    {
+      "model": "testimonial",
+      "locale": "en",
+      "id": "dario-bell",
+      "data": {
+        "quote": "The pricing and integration surfaces are opinionated in the right places.",
+        "person_name": "Dario Bell",
+        "person_role": "Founder",
+        "avatar": "https://images.unsplash.com/photo-1506277886164-e25aa3f4ef7f?auto=format&fit=crop&fm=jpg&q=80&w=800"
+      }
+    },
+    {
+      "model": "faq-item",
+      "locale": "en",
+      "id": "why-nuxt",
+      "data": {
+        "question": "Why Nuxt for a SaaS starter?",
+        "answer": "Nuxt gives a strong page architecture, ergonomic server routes, and native patterns for multi-page product marketing."
+      }
+    },
+    {
+      "model": "faq-item",
+      "locale": "en",
+      "id": "how-contentrain-fits",
+      "data": {
+        "question": "How does Contentrain fit into the app?",
+        "answer": "Pricing tiers, integrations, testimonials, release notes, and global site settings are all modeled as content and exposed through the generated SDK."
+      }
+    },
+    {
+      "model": "changelog-entry",
+      "locale": "en",
+      "slug": "multi-surface-launch-copy",
+      "data": {
+        "title": "Multi-surface launch copy",
+        "release_date": "2026-03-18",
+        "summary": "Added campaign, pricing, and proof surfaces that can be operated as content."
+      },
+      "body": "This release connected product marketing sections to a shared content model.\n\nTeams can now evolve hero messaging, pricing details, and proof modules without reworking page structure."
+    },
+    {
+      "model": "changelog-entry",
+      "locale": "en",
+      "slug": "deploy-ready-seo-and-metadata",
+      "data": {
+        "title": "Deploy-ready SEO and metadata",
+        "release_date": "2026-03-05",
+        "summary": "Improved metadata defaults and starter deployment posture."
+      },
+      "body": "Metadata, canonical settings, and starter-level content defaults now ship with the project.\n\nThat makes the first deployment look intentional instead of incomplete."
+    }
+  ]
+}

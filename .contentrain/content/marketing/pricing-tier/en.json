@@ -1,0 +1,35 @@
+{
+  "scale": {
+    "featured": true,
+    "features": [
+      "Pricing system",
+      "Integration grid",
+      "Changelog models"
+    ],
+    "name": "Scale",
+    "price_label": "$79",
+    "summary": "For SaaS teams shipping pricing, integrations, and changelog storytelling."
+  },
+  "starter": {
+    "featured": false,
+    "features": [
+      "Landing sections",
+      "Basic content models",
+      "Deploy presets"
+    ],
+    "name": "Starter",
+    "price_label": "$29",
+    "summary": "For small launches that need a stronger first impression."
+  },
+  "studio": {
+    "featured": false,
+    "features": [
+      "Multi-page architecture",
+      "Editorial expansion",
+      "Advanced tailoring"
+    ],
+    "name": "Studio",
+    "price_label": "Custom",
+    "summary": "For product suites that need a fuller content and release narrative."
+  }
+}

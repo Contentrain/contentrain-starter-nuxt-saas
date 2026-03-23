@@ -1,0 +1,19 @@
+{
+  "display_name": "Contentrain Nuxt SaaS",
+  "repository_name": "contentrain-starter-nuxt-saas",
+  "repository_description": "Nuxt SaaS starter with pricing, integrations, changelog storytelling, and Contentrain SDK integration.",
+  "repository_topics": ["contentrain", "nuxt", "starter", "saas", "marketing-site", "typescript"],
+  "visibility": "public",
+  "template_repository": true,
+  "framework": "nuxt",
+  "node_version": "22",
+  "package_manager": "pnpm@10.17.0",
+  "install_command": "pnpm install",
+  "check_command": "pnpm check",
+  "build_command": "pnpm build",
+  "preview_command": "pnpm preview",
+  "deploy_targets": [
+    { "provider": "vercel", "output": ".output", "command": "pnpm deploy:vercel" },
+    { "provider": "netlify", "output": ".output", "command": "pnpm deploy:netlify" }
+  ]
+}

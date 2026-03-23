@@ -1,0 +1,10 @@
+{
+  "how-contentrain-fits": {
+    "answer": "Pricing tiers, integrations, testimonials, release notes, and global site settings are all modeled as content and exposed through the generated SDK.",
+    "question": "How does Contentrain fit into the app?"
+  },
+  "why-nuxt": {
+    "answer": "Nuxt gives a strong page architecture, ergonomic server routes, and native patterns for multi-page product marketing.",
+    "question": "Why Nuxt for a SaaS starter?"
+  }
+}

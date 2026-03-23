@@ -1,0 +1,40 @@
+{
+  "name": "nuxt-saas",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "packageManager": "pnpm@10.17.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "preview": "nuxt preview",
+    "check": "nuxt typecheck",
+    "contentrain:generate": "contentrain generate",
+    "deploy:vercel": "NITRO_PRESET=vercel nuxt build",
+    "deploy:netlify": "NITRO_PRESET=netlify nuxt build"
+  },
+  "dependencies": {
+    "@contentrain/query": "^5.0.2",
+    "nuxt": "^4.1.2"
+  },
+  "devDependencies": {
+    "contentrain": "^0.2.3",
+    "typescript": "^5.9.2",
+    "vue-tsc": "^3.1.1"
+  },
+  "imports": {
+    "#contentrain": {
+      "types": "./.contentrain/client/index.d.ts",
+      "import": "./.contentrain/client/index.mjs",
+      "require": "./.contentrain/client/index.cjs"
+    },
+    "#contentrain/*": {
+      "types": "./.contentrain/client/*.d.ts",
+      "import": "./.contentrain/client/*.mjs",
+      "require": "./.contentrain/client/*.cjs"
+    }
+  }
+}

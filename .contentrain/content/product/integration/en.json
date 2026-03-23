@@ -1,0 +1,38 @@
+{
+  "hubspot": {
+    "category": "crm",
+    "name": "HubSpot",
+    "slug": "hubspot",
+    "summary": "CRM, lifecycle messaging, and sales handoff."
+  },
+  "linear": {
+    "category": "project",
+    "name": "Linear",
+    "slug": "linear",
+    "summary": "Issue planning and changelog-linked product execution."
+  },
+  "posthog": {
+    "category": "analytics",
+    "name": "PostHog",
+    "slug": "posthog",
+    "summary": "Product analytics, experiments, and event understanding."
+  },
+  "resend": {
+    "category": "communication",
+    "name": "Resend",
+    "slug": "resend",
+    "summary": "Transactional email and product communication."
+  },
+  "stripe": {
+    "category": "payments",
+    "name": "Stripe",
+    "slug": "stripe",
+    "summary": "Payments, subscription flows, and monetization events."
+  },
+  "supabase": {
+    "category": "platform",
+    "name": "Supabase",
+    "slug": "supabase",
+    "summary": "Modern database, auth, and edge function workflows."
+  }
+}

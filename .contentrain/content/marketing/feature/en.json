@@ -1,0 +1,14 @@
+{
+  "narrative-product-marketing": {
+    "summary": "Guide buyers from context to proof to pricing without flattening every section into the same layout.",
+    "title": "Narrative product marketing"
+  },
+  "nuxt-native-structure": {
+    "summary": "Keep composables, pages, and SEO in the patterns Nuxt teams already expect to maintain.",
+    "title": "Nuxt-native structure"
+  },
+  "shared-content-contracts": {
+    "summary": "Every important marketing surface maps cleanly to a Contentrain model instead of scattered page copy.",
+    "title": "Shared content contracts"
+  }
+}

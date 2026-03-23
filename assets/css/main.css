@@ -1,0 +1,236 @@
+@import "./tokens.css";
+
+:root {
+  --page-width: min(75rem, calc(100vw - 2rem));
+}
+
+html {
+  background:
+    radial-gradient(circle at 12% 8%, rgba(217, 240, 107, 0.3), transparent 18%),
+    radial-gradient(circle at 88% 0%, rgba(15, 123, 82, 0.18), transparent 24%),
+    var(--ct-color-bg);
+  color: var(--ct-color-text);
+  font-family: "Inter", "Helvetica Neue", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.shell {
+  width: var(--page-width);
+  margin: 0 auto;
+}
+
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.brand {
+  font-family: "Space Grotesk", "Avenir Next", sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.nav,
+.button-row {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.pill,
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.15rem;
+  border-radius: 999px;
+  font-size: 0.92rem;
+}
+
+.pill {
+  border: 1px solid var(--ct-color-border);
+  background: rgba(255, 255, 255, 0.68);
+}
+
+.button {
+  background: var(--ct-color-text);
+  color: white;
+  box-shadow: var(--ct-shadow-card);
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 1.5rem;
+  padding: 5rem 0 3rem;
+}
+
+.hero h1 {
+  margin: 0;
+  max-width: 10ch;
+  font-family: "Space Grotesk", "Avenir Next", sans-serif;
+  font-size: clamp(3.4rem, 7vw, 5.8rem);
+  line-height: 0.92;
+  letter-spacing: -0.08em;
+}
+
+.hero p,
+.muted {
+  color: var(--ct-color-muted);
+  line-height: 1.75;
+}
+
+.hero-card,
+.feature-card,
+.plan-card,
+.integration-card,
+.quote-card {
+  border: 1px solid var(--ct-color-border);
+  background: rgba(255, 255, 255, 0.84);
+  border-radius: 1.8rem;
+  box-shadow: var(--ct-shadow-soft);
+}
+
+.hero-card,
+.feature-card,
+.plan-card,
+.integration-card,
+.quote-card {
+  padding: 1.4rem;
+}
+
+.hero-media {
+  width: 100%;
+  display: block;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.changelog-link {
+  display: block;
+}
+
+.testimonial-head,
+.chip-list {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.testimonial-head {
+  margin-bottom: 1rem;
+}
+
+.avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 999px;
+  object-fit: cover;
+}
+
+.field-chip {
+  display: inline-flex;
+  padding: 0.4rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(15, 123, 82, 0.12);
+  color: var(--ct-color-primary);
+  font-size: 0.82rem;
+}
+
+.eyebrow {
+  margin-bottom: 1rem;
+  color: var(--ct-color-primary);
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.section {
+  padding: 2rem 0 0;
+}
+
+.section h2 {
+  margin: 0 0 1rem;
+  font-family: "Space Grotesk", "Avenir Next", sans-serif;
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  letter-spacing: -0.05em;
+}
+
+.grid-3,
+.grid-2 {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+}
+
+.grid-2 {
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+}
+
+.plan-card.featured {
+  background: linear-gradient(180deg, rgba(217, 240, 107, 0.32), rgba(255, 255, 255, 0.96));
+  transform: translateY(-0.5rem);
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.footer {
+  align-items: flex-start;
+}
+
+.footer-copy,
+.footer-columns,
+.footer-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-copy,
+.footer-links {
+  flex-direction: column;
+}
+
+.footer-columns {
+  flex-wrap: wrap;
+}
+
+.footer-column strong {
+  display: block;
+  margin-bottom: 0.65rem;
+  color: var(--ct-color-text);
+}
+
+@media (max-width: 840px) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .header,
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
