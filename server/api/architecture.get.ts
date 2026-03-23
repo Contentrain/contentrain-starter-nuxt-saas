@@ -1,4 +1,3 @@
-import { existsSync } from "node:fs";
 import { readdir, readFile } from "node:fs/promises";
 import path from "node:path";
 
@@ -14,13 +13,7 @@ type ModelSchema = {
 };
 
 export default defineEventHandler(async () => {
-  const cwd = process.cwd();
-  const rootDir = existsSync(path.join(cwd, "contentrain.starter.json"))
-    ? cwd
-    : path.resolve(cwd, "..");
-  const starterConfig = JSON.parse(
-    await readFile(path.join(rootDir, "contentrain.starter.json"), "utf8"),
-  ) as { domains: string[] };
+  const rootDir = process.cwd();
   const modelDir = path.join(rootDir, ".contentrain", "models");
   const modelFiles = (await readdir(modelDir)).sort();
   const models = await Promise.all(
@@ -28,9 +21,12 @@ export default defineEventHandler(async () => {
       JSON.parse(await readFile(path.join(modelDir, file), "utf8")) as ModelSchema,
     ),
   );
+  const domains = [...new Set(models.map((model) => model.domain))].sort((left, right) =>
+    left.localeCompare(right, "en"),
+  );
 
   return {
-    groups: starterConfig.domains.map((domain) => ({
+    groups: domains.map((domain) => ({
       domain,
       models: models.filter((model) => model.domain === domain),
     })),
