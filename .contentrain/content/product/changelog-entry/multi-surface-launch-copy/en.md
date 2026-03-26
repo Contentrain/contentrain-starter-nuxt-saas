@@ -1,5 +1,6 @@
 ---
 release_date: 2026-03-18
+slug: multi-surface-launch-copy
 summary: Added campaign, pricing, and proof surfaces that can be operated as content.
 title: Multi-surface launch copy
 ---

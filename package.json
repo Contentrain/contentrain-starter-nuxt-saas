@@ -17,12 +17,12 @@
     "deploy:netlify": "NITRO_PRESET=netlify nuxt build"
   },
   "dependencies": {
-    "@contentrain/query": "^5.0.2",
+    "@contentrain/query": "^5.1.0",
     "nuxt": "^4.1.2"
   },
   "devDependencies": {
     "@types/node": "^24.4.0",
-    "contentrain": "^0.2.3",
+    "contentrain": "^0.3.1",
     "typescript": "^5.9.2",
     "vue-tsc": "^3.1.1"
   },
