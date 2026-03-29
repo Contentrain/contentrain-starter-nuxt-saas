@@ -4,6 +4,10 @@
 
 SaaS starter focused on pricing, integrations, proof, and release storytelling.
 
+![Contentrain Nuxt SaaS cover](./media/cover.png)
+
+![Contentrain Nuxt SaaS preview](./media/preview.gif)
+
 ## Contentrain Ecosystem
 
 - SDK and CLI: [ai.contentrain.io/packages/sdk.html](https://ai.contentrain.io/packages/sdk.html)
