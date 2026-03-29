@@ -13,7 +13,6 @@
     "preview": "nuxt preview",
     "check": "nuxt typecheck",
     "contentrain:generate": "contentrain generate",
-    "deploy:vercel": "NITRO_PRESET=vercel nuxt build",
     "deploy:netlify": "NITRO_PRESET=netlify nuxt build"
   },
   "dependencies": {
