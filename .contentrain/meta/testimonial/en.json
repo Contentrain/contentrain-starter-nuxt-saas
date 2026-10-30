@@ -1,12 +1,12 @@
 {
   "dario-bell": {
     "source": "import",
-    "status": "draft",
+    "status": "published",
     "updated_by": "contentrain-starters"
   },
   "mina-arslan": {
     "source": "import",
-    "status": "draft",
+    "status": "published",
     "updated_by": "contentrain-starters"
   }
 }
