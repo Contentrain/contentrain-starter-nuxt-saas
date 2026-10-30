@@ -37,7 +37,8 @@
       "type": "array"
     },
     "legal_notice": {
-      "type": "string"
+      "type": "string",
+      "required": true
     }
   }
 }
