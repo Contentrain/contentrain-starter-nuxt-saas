@@ -1,5 +1,9 @@
 {
+  "id": "seo-defaults",
+  "kind": "singleton",
   "domain": "system",
+  "i18n": true,
+  "title_field": "meta_title",
   "fields": {
     "canonical_base": {
       "required": true,
@@ -18,8 +22,5 @@
     "og_image": {
       "type": "image"
     }
-  },
-  "i18n": true,
-  "id": "seo-defaults",
-  "kind": "singleton"
+  }
 }

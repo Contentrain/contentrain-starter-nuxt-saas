@@ -1,5 +1,9 @@
 {
+  "id": "faq-item",
+  "kind": "collection",
   "domain": "marketing",
+  "i18n": true,
+  "title_field": "question",
   "fields": {
     "answer": {
       "required": true,
@@ -12,8 +16,5 @@
       "required": true,
       "type": "string"
     }
-  },
-  "i18n": true,
-  "id": "faq-item",
-  "kind": "collection"
+  }
 }

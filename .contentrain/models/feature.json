@@ -1,5 +1,9 @@
 {
+  "id": "feature",
+  "kind": "collection",
   "domain": "marketing",
+  "i18n": true,
+  "title_field": "title",
   "fields": {
     "emphasis": {
       "type": "boolean"
@@ -15,8 +19,5 @@
       "required": true,
       "type": "string"
     }
-  },
-  "i18n": true,
-  "id": "feature",
-  "kind": "collection"
+  }
 }

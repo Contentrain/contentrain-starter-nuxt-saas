@@ -1,5 +1,9 @@
 {
+  "id": "integration",
+  "kind": "collection",
   "domain": "product",
+  "i18n": true,
+  "title_field": "name",
   "fields": {
     "category": {
       "type": "string"
@@ -20,8 +24,5 @@
       "required": true,
       "type": "text"
     }
-  },
-  "i18n": true,
-  "id": "integration",
-  "kind": "collection"
+  }
 }

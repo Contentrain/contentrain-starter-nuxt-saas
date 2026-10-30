@@ -1,5 +1,9 @@
 {
+  "id": "hero",
+  "kind": "singleton",
   "domain": "marketing",
+  "i18n": true,
+  "title_field": "title",
   "fields": {
     "eyebrow": {
       "type": "string"
@@ -26,8 +30,5 @@
       "required": true,
       "type": "string"
     }
-  },
-  "i18n": true,
-  "id": "hero",
-  "kind": "singleton"
+  }
 }

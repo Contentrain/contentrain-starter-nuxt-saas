@@ -1,5 +1,9 @@
 {
+  "id": "testimonial",
+  "kind": "collection",
   "domain": "marketing",
+  "i18n": true,
+  "title_field": "person_name",
   "fields": {
     "avatar": {
       "type": "image"
@@ -21,8 +25,5 @@
     "rating": {
       "type": "rating"
     }
-  },
-  "i18n": true,
-  "id": "testimonial",
-  "kind": "collection"
+  }
 }

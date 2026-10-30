@@ -1,5 +1,9 @@
 {
+  "id": "footer",
+  "kind": "singleton",
   "domain": "system",
+  "i18n": true,
+  "title_field": "legal_notice",
   "fields": {
     "blurb": {
       "type": "text"
@@ -35,8 +39,5 @@
     "legal_notice": {
       "type": "string"
     }
-  },
-  "i18n": true,
-  "id": "footer",
-  "kind": "singleton"
+  }
 }

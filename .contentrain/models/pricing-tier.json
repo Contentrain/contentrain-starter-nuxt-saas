@@ -1,5 +1,9 @@
 {
+  "id": "pricing-tier",
+  "kind": "collection",
   "domain": "marketing",
+  "i18n": true,
+  "title_field": "name",
   "fields": {
     "billing_hint": {
       "type": "string"
@@ -23,8 +27,5 @@
       "required": true,
       "type": "text"
     }
-  },
-  "i18n": true,
-  "id": "pricing-tier",
-  "kind": "collection"
+  }
 }

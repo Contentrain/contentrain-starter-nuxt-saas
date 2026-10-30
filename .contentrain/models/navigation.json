@@ -1,5 +1,9 @@
 {
+  "id": "navigation",
+  "kind": "singleton",
   "domain": "system",
+  "i18n": true,
+  "title_field": "announcement_label",
   "fields": {
     "announcement_label": {
       "type": "string"
@@ -29,8 +33,5 @@
       },
       "type": "array"
     }
-  },
-  "i18n": true,
-  "id": "navigation",
-  "kind": "singleton"
+  }
 }

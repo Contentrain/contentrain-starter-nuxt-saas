@@ -1,5 +1,9 @@
 {
+  "id": "site-settings",
+  "kind": "singleton",
   "domain": "system",
+  "i18n": true,
+  "title_field": "site_name",
   "fields": {
     "default_locale": {
       "required": true,
@@ -19,8 +23,5 @@
       "required": true,
       "type": "string"
     }
-  },
-  "i18n": true,
-  "id": "site-settings",
-  "kind": "singleton"
+  }
 }
