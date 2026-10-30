@@ -3,7 +3,7 @@
   "kind": "singleton",
   "domain": "system",
   "i18n": true,
-  "title_field": "announcement_label",
+  "title_field": "cta_label",
   "fields": {
     "announcement_label": {
       "type": "string"
@@ -12,7 +12,8 @@
       "type": "string"
     },
     "cta_label": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "items": {
       "items": {

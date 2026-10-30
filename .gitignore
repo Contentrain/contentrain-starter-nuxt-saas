@@ -10,3 +10,6 @@ coverage
 *.tsbuildinfo
 .DS_Store
 .contentrain/.cache/
+.netlify
+.env
+.env.*

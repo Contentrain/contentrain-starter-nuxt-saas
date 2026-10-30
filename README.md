@@ -1,57 +1,87 @@
-> Source of truth: this starter is exported from the `contentrain-starters` monorepo.
-> Internal starter id: `nuxt-saas`.
+<!-- cover -->
 # Contentrain Nuxt SaaS
 
-SaaS starter focused on pricing, integrations, proof, and release storytelling.
+A Nuxt 4 starter for a SaaS marketing site: hero, features, pricing, integrations, testimonials, FAQ and a changelog. All of it is content in `.contentrain/`, with nothing hard-coded in the pages.
+
+It is built on [Contentrain](https://ai.contentrain.io), the content governance ecosystem for teams and AI agents. Here is how that works in this starter:
+- Content, schemas and the generated typed client live in git next to the code.
+- Every change is reviewable.
+- AI agents edit content through the same validated models as people do.
 
 ![Contentrain Nuxt SaaS cover](./media/cover.png)
 
 ![Contentrain Nuxt SaaS preview](./media/preview.gif)
 
-## Contentrain Ecosystem
+## What it shows
 
-- SDK and CLI: [ai.contentrain.io/packages/sdk.html](https://ai.contentrain.io/packages/sdk.html)
-- Product guides: [docs.contentrain.io](https://docs.contentrain.io/)
-- Content operations UI: [studio.contentrain.io](https://studio.contentrain.io)
+- **Server-only content reads.** Nitro routes in `server/api/` query the generated `#contentrain` client. Pages load the data with `useAsyncData`, as the [Nuxt guide](https://ai.contentrain.io/guides/frameworks#nuxt-3) recommends.
+- **Collections, singletons and documents.**
+  - Pricing tiers, features, integrations, testimonials and FAQ are collections.
+  - Hero, navigation, footer, SEO and site settings are singletons.
+  - Changelog entries are Markdown documents, with a real route at `/changelog/[slug]`. An unknown slug returns 404.
+- **A model overview.** `/architecture` lists the models by domain, read from `.contentrain/models`.
 
-## Quick Start
+## Use this template
+
+1. Click **[Use this template](https://github.com/new?template_name=contentrain-starter-nuxt-saas&template_owner=Contentrain)** to create your own repository.
+2. Connect that repository to [Contentrain Studio](https://contentrain.io/studio). Your team can then edit, review and publish the content in the browser, while every change stays a git commit.
+
+## Quick start
+
+Requires Node 22 and pnpm 10.
 
 ```bash
 pnpm install
 pnpm dev
 ```
 
-## Commands
+| Command | What it does |
+|---|---|
+| `pnpm dev` | Start the dev server |
+| `pnpm check` | Type-check with `nuxt typecheck` |
+| `pnpm build` | Production build |
+| `pnpm preview` | Serve the production build |
+| `pnpm contentrain:generate` | Regenerate `.contentrain/client` after you change models or content |
+| `pnpm exec contentrain validate` | Validate models and content |
+| `pnpm deploy:netlify` | Build with the Netlify preset |
 
-- `pnpm dev`
-- `pnpm check`
-- `pnpm build`
-- `pnpm preview`
-- `pnpm deploy:netlify`
-- `pnpm contentrain:generate`
+Demo routes: `/`, `/changelog/multi-surface-launch-copy`, `/architecture`.
 
-## Demo routes
+## Content model
 
-- `/`
-- `/changelog/multi-surface-launch-copy`
-- `/architecture`
+Domains: `system`, `marketing`, `product`. Locale: `en`.
 
-## Contentrain
+| Model | Kind | Domain | Fields |
+|---|---|---|---|
+| `footer` | singleton | system | `blurb`, `columns`, `legal_notice` |
+| `navigation` | singleton | system | `announcement_label`, `cta_href`, `cta_label`, `items` |
+| `seo-defaults` | singleton | system | `canonical_base`, `meta_description`, `meta_title`, `og_image` |
+| `site-settings` | singleton | system | `default_locale`, `og_image`, `site_name`, `site_tagline`, `theme_name` |
+| `faq-item` | collection | marketing | `answer`, `category`, `question` |
+| `feature` | collection | marketing | `emphasis`, `icon`, `summary`, `title` |
+| `hero` | singleton | marketing | `eyebrow`, `hero_media`, `primary_cta_href`, `primary_cta_label`, `secondary_cta_href`, `secondary_cta_label`, `subtitle`, `title` |
+| `pricing-tier` | collection | marketing | `billing_hint`, `featured`, `features`, `name`, `price_label`, `summary` |
+| `testimonial` | collection | marketing | `avatar`, `company_name`, `person_name`, `person_role`, `quote`, `rating` |
+| `changelog-entry` | document | product | `release_date`, `slug`, `summary`, `title`, Markdown body |
+| `integration` | collection | product | `category`, `icon`, `name`, `slug`, `summary` |
 
-- Content models live in `.contentrain/`
-- A server API route reads from `#contentrain` and feeds the Nuxt page with typed content
-- Pricing tiers, integrations, testimonials, FAQ, changelog, navigation, footer, and SEO are all content-driven
-- Changelog cards now link to a real internal route at `/changelog/[slug]`
-- The starter stays aligned with Contentrain’s git-native architecture and keeps content, schema, and generated SDK output in one reviewable flow
+Models are in `.contentrain/models/` and content is in `.contentrain/content/`. After you edit either one, run `pnpm contentrain:generate`. That refreshes the typed client, which the server routes import as `#contentrain`.
 
 ## Deploy
 
-- Netlify build command: `pnpm deploy:netlify`
-- Netlify publish directory: framework-managed
-- Standard local production build: `pnpm build`
-
-## Netlify Project Creation
+- Netlify: the build command is `pnpm deploy:netlify` (set in `netlify.toml`). Nitro manages the publish directory.
+- Netlify CLI: run `pnpm dlx netlify-cli init` to connect the repository for continuous deployment, or `pnpm dlx netlify-cli link` if the site already exists.
+- Any Node host: run `pnpm build`, then `node .output/server/index.mjs`.
 
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https%3A%2F%2Fgithub.com%2FContentrain%2Fcontentrain-starter-nuxt-saas)
 
-Use `pnpm dlx netlify-cli init` to connect the repository for continuous deployment, or `pnpm dlx netlify-cli link` if the site already exists.
+## Contentrain links
+
+- Contentrain AI, MCP, CLI and SDK: [ai.contentrain.io](https://ai.contentrain.io)
+- Query SDK: [ai.contentrain.io/packages/sdk](https://ai.contentrain.io/packages/sdk)
+- Nuxt guide: [ai.contentrain.io/guides/frameworks#nuxt-3](https://ai.contentrain.io/guides/frameworks#nuxt-3)
+- Contentrain Studio: [contentrain.io/studio](https://contentrain.io/studio)
+
+## License
+
+MIT, see [LICENSE](./LICENSE).

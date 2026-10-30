@@ -10,13 +10,17 @@ type ChangelogPayload = {
 };
 
 const route = useRoute();
-const { data: page } = await useAsyncData<ChangelogPayload>(
+const { data: page, error } = await useAsyncData<ChangelogPayload>(
   `changelog:${route.params.slug}`,
   () => $fetch(`/api/changelog/${route.params.slug}`),
 );
 
+if (error.value) {
+  throw createError({ statusCode: error.value.statusCode ?? 404, statusMessage: error.value.statusMessage, fatal: true });
+}
+
 const paragraphs = computed(() =>
-  String(page.value?.entry?.content ?? "")
+  String(page.value?.entry?.body ?? "")
     .split(/\n\s*\n/g)
     .filter(Boolean),
 );
