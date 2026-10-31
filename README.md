@@ -84,6 +84,7 @@ Contentrain has four parts: the open-source tools, Studio, Migrate and Bridge.
 - Query SDK: [ai.contentrain.io/packages/sdk](https://ai.contentrain.io/packages/sdk)
 - Nuxt guide: [ai.contentrain.io/guides/frameworks#nuxt-3](https://ai.contentrain.io/guides/frameworks#nuxt-3)
 - Contentrain Studio: [contentrain.io/studio](https://contentrain.io/studio)
+- Edit with an AI agent: [@contentrain/mcp](https://ai.contentrain.io/packages/mcp) locally, or [Studio MCP Cloud](https://docs.contentrain.io/developer/mcp-cloud) for teams
 - Open-source tools (MIT): [github.com/Contentrain/ai](https://github.com/Contentrain/ai)
 - Migrate, WordPress to Astro: [migrate.contentrain.io](https://migrate.contentrain.io)
 - Bridge, a free WordPress plugin that exports content as a Contentrain store: [github.com/Contentrain/wordpress-bridge](https://github.com/Contentrain/wordpress-bridge)
